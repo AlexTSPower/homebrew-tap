@@ -5,21 +5,21 @@
 class Mdv < Formula
   desc "Terminal markdown viewer with GitHub-style rendering"
   homepage "https://github.com/AlexTSPower/mdv"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/AlexTSPower/mdv/releases/download/v0.2.0/mdv_0.2.0_darwin_amd64.tar.gz"
-      sha256 "ba4f2b2bd65d6cb1145ed6e99ea0216fd704e541bf8a6906d2248b305a48c834"
+      url "https://github.com/AlexTSPower/mdv/releases/download/v0.3.0/mdv_0.3.0_darwin_amd64.tar.gz"
+      sha256 "fb18b39f0194fa13f376bccd0274ee38d1a4e1108c6ddac9144d1077b598363b"
 
       define_method(:install) do
         bin.install "mdv"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/AlexTSPower/mdv/releases/download/v0.2.0/mdv_0.2.0_darwin_arm64.tar.gz"
-      sha256 "e112caef6228069aaf3bea2d6ed9212775c4589f3d75bcab84b74090dda87558"
+      url "https://github.com/AlexTSPower/mdv/releases/download/v0.3.0/mdv_0.3.0_darwin_arm64.tar.gz"
+      sha256 "a6ba2f21b7de831c77c80f083582a292a4b923ef8ad6eca2d5101a631a571bed"
 
       define_method(:install) do
         bin.install "mdv"
@@ -29,15 +29,15 @@ class Mdv < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AlexTSPower/mdv/releases/download/v0.2.0/mdv_0.2.0_linux_amd64.tar.gz"
-      sha256 "e0e94aaab8d0dea247ac56b7ea2b42772f9dffe8f385b55de2c42e929efd234d"
+      url "https://github.com/AlexTSPower/mdv/releases/download/v0.3.0/mdv_0.3.0_linux_amd64.tar.gz"
+      sha256 "9a58a99ae7f9d62de96e6f3c3e43dc78f9d3a1d8068559acfe105b2c57eae787"
       define_method(:install) do
         bin.install "mdv"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AlexTSPower/mdv/releases/download/v0.2.0/mdv_0.2.0_linux_arm64.tar.gz"
-      sha256 "7f66d6d7bd3d9f2bc4a9140ea2f9a2be533f29bfb7849b78af7299526a75e7d2"
+      url "https://github.com/AlexTSPower/mdv/releases/download/v0.3.0/mdv_0.3.0_linux_arm64.tar.gz"
+      sha256 "8b8ac2bd46aa0575d07a41caba3b9890e830eb9556f6d61ece4744b5b1d2c9d0"
       define_method(:install) do
         bin.install "mdv"
       end
