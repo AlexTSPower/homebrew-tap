@@ -5,21 +5,21 @@
 class Stackreader < Formula
   desc "Terminal markdown viewer with GitHub-style rendering"
   homepage "https://github.com/AlexTSPower/StackReader"
-  version "0.3.2"
+  version "0.3.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/AlexTSPower/StackReader/releases/download/v0.3.2/stackreader_0.3.2_darwin_amd64.tar.gz"
-      sha256 "e1062bc1714fe8a7b04e53c242ad4befefd6847b6b9e13812195e948bbf4be25"
+      url "https://github.com/AlexTSPower/StackReader/releases/download/v0.3.3/stackreader_0.3.3_darwin_amd64.tar.gz"
+      sha256 "d77c1511a96e50e667b7ec4e3fe73e6343d3c0edd7d20604b9964b15878bed89"
 
       define_method(:install) do
         bin.install "stackreader"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/AlexTSPower/StackReader/releases/download/v0.3.2/stackreader_0.3.2_darwin_arm64.tar.gz"
-      sha256 "07f3fc1d75d846546ba39bcc0a2336d50f3f33f5751c07e731b5118800102d6c"
+      url "https://github.com/AlexTSPower/StackReader/releases/download/v0.3.3/stackreader_0.3.3_darwin_arm64.tar.gz"
+      sha256 "28af929f39d6ed2569ba24271a1a2e54fc52962cf5f8571ff23a106b06cdf5b4"
 
       define_method(:install) do
         bin.install "stackreader"
@@ -29,15 +29,15 @@ class Stackreader < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AlexTSPower/StackReader/releases/download/v0.3.2/stackreader_0.3.2_linux_amd64.tar.gz"
-      sha256 "615811b5739f1098ee507783d0b9d477483a1f933f62b73dcfeda2d974b44d10"
+      url "https://github.com/AlexTSPower/StackReader/releases/download/v0.3.3/stackreader_0.3.3_linux_amd64.tar.gz"
+      sha256 "9e8d4e6121aab9906f90da43421678f67bb67de6462000ac4341dc28dd22b5ee"
       define_method(:install) do
         bin.install "stackreader"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AlexTSPower/StackReader/releases/download/v0.3.2/stackreader_0.3.2_linux_arm64.tar.gz"
-      sha256 "c6c191f201a0fc1acc5a451e7fa46ceee7ad55795706d2eec2414f51840bf991"
+      url "https://github.com/AlexTSPower/StackReader/releases/download/v0.3.3/stackreader_0.3.3_linux_arm64.tar.gz"
+      sha256 "835cbadbf7e82806e1b6ad3b4999208a101fbdb369063e35a979bb83b4bd04ef"
       define_method(:install) do
         bin.install "stackreader"
       end
